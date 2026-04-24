@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cora Booker Concierge</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{
+  background:#0b0b0b;
+  color:#fff;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+/* ===== COLOR ===== */
+:root{
+  --brown:#c6a27e;
+  --white:#ffffff;
+  --black:#0b0b0b;
+}
+
+/* ===== NAV ===== */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+}
+.logo img{height:42px;}
+.nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+  font-size:14px;
+}
+.nav li{cursor:pointer;color:#fff;}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 80px;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('bg.jpg') center/cover no-repeat;
+}
+.hero-content{max-width:900px;}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+.hero p{
+  color:#ddd;
+  margin-bottom:20px;
+}
+
+/* ===== STATS ===== */
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  margin:40px 0;
+}
+.stat strong{display:block;font-size:22px;color:var(--brown);}
+
+/* ===== BUTTON ===== */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+.btn{
+  padding:14px 26px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:500;
+}
+.btn-primary{
+  background:var(--brown);
+  color:#000;
+}
+.btn-outline{
+  border:1px solid #fff;
+  background:transparent;
+  color:#fff;
+}
+
+/* ===== SECTION ===== */
+.section{
+  max-width:1000px;
+  margin:80px auto;
+  padding:0 20px;
+}
+.section h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+.section p{color:#ccc;margin-bottom:10px;}
+
+/* ===== LIST ===== */
+.list{margin-top:15px;}
+.list li{margin-bottom:10px;}
+
+/* ===== PROCESS ===== */
+.process{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  margin-top:20px;
+}
+.step{
+  background:#111;
+  border:1px solid #222;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* ===== PRICE ===== */
+.price{
+  font-size:40px;
+  color:var(--brown);
+  margin:20px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  text-align:center;
+  padding:50px 20px;
+  border-top:1px solid #222;
+  color:#888;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+.hero h1{font-size:30px;}
+.nav{padding:15px;}
+.nav ul{display:none;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+<div class="logo"><img src="logo.png"></div>
+<ul>
+<li>Service</li>
+<li>Process</li>
+<li>Pricing</li>
+<li>FAQ</li>
+<li>Reservation Request</li>
+</ul>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+
+<h1>Cora Booker Concierge</h1>
+
+<p>Support for reservations in Korea for international travelers</p>
+
+<p>Can't I make a reservation in Korea?<br>
+We will process your reservation.</p>
+
+<p>
+There are still many places in Korea that expect local phone numbers, local payment methods, or Korean communication. 
+Cora Booker turns these friction into a guided concierge-style process.
+</p>
+
+<div class="stats">
+<div class="stat"><strong>24 hours</strong>a general first reaction</div>
+<div class="stat"><strong>After it's over</strong>Payment only after confirmation</div>
+<div class="stat"><strong>1:1</strong>Human support for all requests</div>
+</div>
+
+<div class="buttons">
+<button class="btn btn-primary">💳 Pay now</button>
+<button class="btn btn-outline">📅 Make a reservation now</button>
+</div>
+
+</div>
+</div>
+
+<!-- CONTENT -->
+<div class="section">
+
+<h2>a way to help</h2>
+<p>We handle local phone authentication, Korean payment method, and all place communication on your behalf.</p>
+
+<p>Check Priority Flow<br>
+Payment after reservation is completed<br>
+Premium Seoul Concierge Style Reservation Scenes<br>
+safe and transparent</p>
+
+<p>Payment will not be made until your reservation is confirmed. We will keep you updated at every step of the way.</p>
+
+</div>
+
+<div class="section">
+<h2>Scope of Service</h2>
+
+<p>It was created to remove the three biggest Korean reservation barriers.</p>
+
+<p>Reservations that we can help you with</p>
+<p>Restaurants, cafes, K-beauty appointments, classes, ticket experience, transportation-related reservations</p>
+
+<p>Payment and communication processing</p>
+<p>If the local payment method or Korean phone number is required, we manage it</p>
+
+<p>Quick clarity before payment</p>
+<p>Check availability first, then payment after confirmation</p>
+
+</div>
+
+<div class="section">
+<h2>What we work out for you</h2>
+
+<ul class="list">
+<li>✓ No Korean phone number required</li>
+<li>✓ No need for Korean card or bank app</li>
+<li>✓ No Korean barrier</li>
+<li>✓ Direct updates</li>
+<li>✓ Suitable for travelers</li>
+<li>✓ Clear process before payment</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>How it works</h2>
+
+<div class="process">
+<div class="step"><strong>01</strong> Send reservation requests</div>
+<div class="step"><strong>02</strong> We check locally</div>
+<div class="step"><strong>03</strong> Reservation confirmed</div>
+<div class="step"><strong>04</strong> Pay after confirmation</div>
+</div>
+
+</div>
+
+<div class="section">
+<h2>service charge</h2>
+
+<div class="price">$12</div>
+
+<p>No advance payment / Payment after confirmation</p>
+
+<p>Payment method: Paypal / Payoneer</p>
+
+<p>✓ Secure Payment</p>
+
+</div>
+
+<div class="section">
+<h2>Refund and Payment Policy</h2>
+
+<ul class="list">
+<li>Payment not possible before confirmation</li>
+<li>Full refund if reservation cannot be completed</li>
+<li>Check and make changes</li>
+<li>Cancel Customer</li>
+<li>No-show is non-refundable</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>Reservation ready</h2>
+
+<p>Contact via WhatsApp / Instagram / Email</p>
+
+<div class="buttons">
+<button class="btn btn-outline">WhatsApp</button>
+<button class="btn btn-outline">Instagram</button>
+<button class="btn btn-outline">Email</button>
+</div>
+
+</div>
+
+<div class="section">
+<h2>frequently asked questions</h2>
+
+<ul class="list">
+<li>What's the difference between booking yourself?</li>
+<li>When do I pay?</li>
+<li>What requests are possible?</li>
+<li>How can I contact?</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>Reservation ready</h2>
+
+<p>I will process your reservation in Korea today.</p>
+
+<div class="buttons">
+<button class="btn btn-primary">📅 Make a reservation now</button>
+<button class="btn btn-outline">💳 Pay now</button>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+Travel and Trust Concepts<br>
+Cora Booker Concierge
+</div>
+
+</body>
+</html>
